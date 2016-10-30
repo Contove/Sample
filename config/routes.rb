@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  root 'staticpage#home'
+  
   get 'staticpage/home'
 
   get 'staticpage/help'
