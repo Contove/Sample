@@ -14,15 +14,20 @@ class StaticpageControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get help" do
-    get staticpage_help_url
+    get help_path
     assert_response :success
     assert_select "title","Help | Ruby on Rails Tutorial Sample App"
   end
 
   test "should get about" do
-    get staticpage_about_url
+    get about_path
     assert_response :success
     assert_select "title","About | Ruby on Rails Tutorial Sample App"
+  end
+  
+  test "should get login" do
+    get login_path
+    assert_response :success
   end
 
 end
