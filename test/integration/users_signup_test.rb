@@ -13,9 +13,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          password:              "foo",
                                          password_confirmation: "bar" } }
     end
-    follow_redirect!
-    assert_template 'users/show'
-    assert_not flash.FILL_IN
+    
   end
   
   

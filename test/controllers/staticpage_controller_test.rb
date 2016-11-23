@@ -25,9 +25,5 @@ class StaticpageControllerTest < ActionDispatch::IntegrationTest
     assert_select "title","About | Ruby on Rails Tutorial Sample App"
   end
   
-  test "should get login" do
-    get login_path
-    assert_response :success
-  end
-
+  
 end
